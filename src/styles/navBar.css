@@ -1,0 +1,52 @@
+.navBarContainer {
+    display: flex;
+    background-color: rgba(51, 51, 51, 0.4);
+    height: 70px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navBarminContainer {
+    display: flex;
+    background-color: rgba(51, 51, 51, 0.4);
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 20%;
+
+}
+
+.menus {
+    color: white;
+}
+
+.menus:hover {
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.poppinsNavBarText {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.socialMediaIconsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex: row;
+    width: 10%;
+}
+
+.socialMediaIconsContainer :hover {
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
