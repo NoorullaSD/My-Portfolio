@@ -1,0 +1,37 @@
+.poppinsHeaderText {
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+}
+
+
+.poppinsTinyText {
+    font-weight: 100;
+    font-size: 12px;
+    color: white;
+}
+
+.poppinsSubText {
+    font-weight: 100;
+    font-size: 16px;
+    color: white;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.icon {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.stackContainer {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,121 @@
+.infoTextContainer {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.infoText {
+    max-width: 50%;
+    min-width: 50%;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+}
+
+
+@media (max-width: 1100px) {
+    .infoText {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+.poppinsHeaderText {
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+}
+
+.poppinsSubText {
+    font-weight: 100;
+    font-size: 16px;
+    color: white;
+}
+
+.myImageContainer {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glow-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #3F8E00, #62BA1B);
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Tablet (<= 768px) */
+@media (max-width: 768px) {
+    .glow-btn {
+        padding: 20px 20px;
+        font-size: 10px;
+        border-radius: 8px;
+    }
+}
+
+/* Mobile (<= 400px) */
+@media (max-width: 400px) {
+    .glow-btn {
+        padding: 10px 18px;
+        font-size: 12px;
+        border-radius: 6px;
+        width: 100%;
+        /* full width button on small screens */
+    }
+}
+
+.glow-btn:hover {
+    transform: scale(1);
+    color: white;
+    box-shadow: 0 0 10px rgba(63, 142, 0, 0.6),
+        0 0 10px rgba(98, 186, 27, 0.6);
+}
+
+.myImage {
+    width: 55%;
+    border-radius: 100%
+}
+
+.workedContainer {
+    width: 50%;
+    padding-bottom: 30px;
+}
+
+
+.workExp {
+    display: flex;
+}
+
+.centizenConainer {
+    width: 160px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: rgba(51, 51, 51, 0.8);
+    border-radius: 6px;
+
+}
+
+.centizen {
+    width: 100px;
+    height: 30px;
+}

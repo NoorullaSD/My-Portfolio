@@ -8,11 +8,11 @@ function NavBar() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const navBarMenu = [
-        { name: "About", link: "/" },
-        { name: "Experience", link: "/about" },
-        { name: "Tech Stack & Skills", link: "/aboutme" },
-        { name: "Projects", link: "/projects" },
-        { name: "Contact", link: "/contact" },
+        { name: "About", id: "about" },
+        { name: "Experience", id: "experience" },
+        { name: "Tech Stack & Skills", id: "techStack" },
+        { name: "Projects", id: "project" },
+        { name: "Contact", id: "/contact" },
     ];
 
     useEffect(() => {
@@ -27,21 +27,62 @@ function NavBar() {
             {windowWidth >= 800 ? (
                 <>
                     {navBarMenu.map((item, index) => (
-                        <p key={index} className="menus poppinsNavBarText">
-                            {item?.name}
-                        </p>
+                        index == 4 ?
+                            <a
+                                href="mailto:er.noorulla@gmail.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ textDecoration: "none", color: "inherit" }}
+                            >
+                                <p key={index}
+                                    onClick={() =>
+                                        window.open("https://mail.google.com/mail/?view=cm&fs=1&to=er.noorulla@gmail.com", "_blank")
+                                    }
+                                    className="menus poppinsNavBarText">
+                                    {item?.name}
+                                </p>
+                            </a>
+                            :
+                            <p key={index}
+                                onClick={() => {
+                                    document.getElementById(item?.id)?.scrollIntoView({ behavior: "smooth" });
+                                }}
+                                className="menus poppinsNavBarText">
+                                {item?.name}
+                            </p>
                     ))}
                     <div className="socialMediaIconsContainer">
                         <div className="socialMediaIcons">
-                            <IoLogoYoutube style={{ color: "white" }} />
+                            <a
+                                href="https://youtu.be/C85OQlrHx2Y?si=AqZ02GuQs47hqeyO"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ textDecoration: "none", color: "inherit" }}
+                            >
+                                <IoLogoYoutube size={20} style={{ color: "white", cursor: "pointer" }} />
+                            </a>
                         </div>
                         <div className="socialMediaIcons">
-                            <FaLinkedinIn
-                                style={{ marginLeft: 20, marginRight: 20, color: "white" }}
-                            />
+                            <a
+                                href="https://www.linkedin.com/in/noorulla-s-d-7b2312249/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ textDecoration: "none", color: "inherit" }}
+                            >
+                                <FaLinkedinIn
+                                    size={20}
+                                    style={{ marginLeft: 20, marginRight: 20, color: "white" }}
+                                />
+                            </a>
                         </div>
                         <div className="socialMediaIcons">
-                            <FaInstagram style={{ color: "white" }} />
+                            <a href="https://www.instagram.com/_noor_ull_a/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ textDecoration: "none", color: "inherit" }}
+                            >
+                                <FaInstagram size={20} style={{ color: "white" }} />
+                            </a>
                         </div>
                     </div>
                 </>
@@ -57,6 +98,12 @@ function NavBar() {
                     >
                         ☰
                     </button>
+                    <div>
+                        <p className="poppinsNavBarText" style={{ color: "white" }}>Welcome to my portfolio</p>
+                    </div>
+                    <div style={{ width: "10%" }}>
+                        <p className="poppinsNavBarText" style={{ color: "white" }}>{`:-)`}</p>
+                    </div>
 
                     {/* Offcanvas Drawer */}
                     <div

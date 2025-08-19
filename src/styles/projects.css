@@ -1,0 +1,73 @@
+.projectsPoppinsHeaderTex {
+    font-weight: 700;
+    font-size: 36px;
+    color: black;
+}
+
+.projectsPoppinsHeaderText {
+    font-weight: 700;
+    font-size: 26px;
+    color: black;
+}
+
+.projectsPoppinsTinyText {
+    font-weight: 100;
+    font-size: 12px;
+    color: black;
+    padding-top: 10px;
+}
+
+.projectsPoppinsSubText {
+    font-weight: 100;
+    font-size: 16px;
+    color: black;
+}
+
+.projectsContainer {
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetcWork {
+    display: flex;
+}
+
+.projectsBox {
+    width: 50vh;
+    border-width: 1px;
+    border-color: rgba(51, 51, 51, 0.4);
+    border-style: solid;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.projectsImage {
+    width: 48vh;
+}
+
+
+.demo-btn {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    width: 48vh;
+    font-size: 12px;
+    padding: 8px 32px;
+    color: black;
+    background: linear-gradient(90deg, #FFD500, #FFE761);
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
