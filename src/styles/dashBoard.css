@@ -15,6 +15,20 @@
     height: 70vh;
 }
 
+/* For small screens */
+@media (max-width: 600px) {
+    .infoText {
+        max-width: 90%;
+        min-width: 50%;
+        padding-left: 150px;
+        padding-right: 150px;
+        display: flex;
+        flex-direction: column;
+        height: 45vh;
+    }
+}
+
+
 
 @media (max-width: 1100px) {
     .infoText {

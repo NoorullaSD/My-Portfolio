@@ -130,21 +130,54 @@ function NavBar() {
                                     className="menus poppinsNavBarText"
                                     data-bs-dismiss="offcanvas"
                                     style={{ marginBottom: 10 }}
+                                    onClick={() => {
+                                        // Close offcanvas first
+                                        const offcanvasEl = document.getElementById("mobileDrawer");
+                                        const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl); // Bootstrap API
+                                        if (bsOffcanvas) {
+                                            bsOffcanvas.hide();
+                                        }
+
+                                        // Delay the scroll slightly so layout settles
+                                        setTimeout(() => {
+                                            document.getElementById(item?.id)?.scrollIntoView({ behavior: "smooth" });
+                                        }, 300);
+                                    }}
                                 >
                                     {item?.name}
                                 </p>
                             ))}
                             <div className="socialMediaIconsContainer mt-3">
                                 <div className="socialMediaIcons">
-                                    <IoLogoYoutube style={{ color: "white" }} />
+                                    <a
+                                        href="https://youtu.be/C85OQlrHx2Y?si=AqZ02GuQs47hqeyO"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ textDecoration: "none", color: "inherit" }}
+                                    >
+                                        <IoLogoYoutube style={{ color: "white", cursor: "pointer" }} />
+                                    </a>
                                 </div>
                                 <div className="socialMediaIcons">
-                                    <FaLinkedinIn
-                                        style={{ marginLeft: 20, marginRight: 20, color: "white" }}
-                                    />
+                                    <a
+                                        href="https://www.linkedin.com/in/noorulla-s-d-7b2312249/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ textDecoration: "none", color: "inherit" }}
+                                    >
+                                        <FaLinkedinIn
+                                            style={{ marginLeft: 20, marginRight: 20, color: "white" }}
+                                        />
+                                    </a>
                                 </div>
                                 <div className="socialMediaIcons">
-                                    <FaInstagram style={{ color: "white" }} />
+                                    <a href="https://www.instagram.com/_noor_ull_a/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ textDecoration: "none", color: "inherit" }}
+                                    >
+                                        <FaInstagram style={{ color: "white" }} />
+                                    </a>
                                 </div>
                             </div>
                         </div>

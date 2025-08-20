@@ -11,17 +11,17 @@ function Experience() {
         {
             name: "Zenbaske Store",
             image: Store,
-            description: 'A cross-platform mobile application for an online store, allowing users to browse products, make purchases, and track orders.I contributed to Product Listings, Quick View, and Authentication, ensuring a seamless shopping experience for users.'
+            description: 'Worked on Zenbasket Store, a cross-platform mobile application for an online store that enables users to browse products, make purchases, and track orders. I contributed to the development of Product Listings, Quick View, and Authentication features, ensuring a smooth, secure, and user-friendly shopping experience.'
         },
         {
             name: "Zenbaske Admin",
             image: Admin,
-            description: 'A cross-platform mobile application designed for e-commerce business owners and administrators to manage products, orders, customers, and analytics.I contributed to its development, working on Segments, Credits, Discounts, and Gift Cards modules.'
+            description: 'Worked on Zenbasket Admin, a cross-platform mobile application designed for e-commerce business owners and administrators to efficiently manage products, orders, customers, and analytics. My key contributions included developing and enhancing the Segments, Credits, Discounts, and Gift Cards modules, ensuring smooth functionality and a seamless user experience for business administrators.'
         },
         {
             name: "Zenbaske Work space",
             image: Workforce,
-            description: 'A cross-platform mobile application for an online store, allowing users to browse products, make purchases, and track orders.I contributed to Product Listings, Quick View, and Authentication, ensuring a seamless shopping experience for users.'
+            description: 'In my workforce project, I integrated GraphQL APIs to optimize data fetching and minimize redundant network calls, which significantly improved application performance. I developed TypeScript-based components, increasing development efficiency by 35% while reducing type-related bugs and ensuring better code reliability. Additionally, I implemented Redux for state management, enabling predictable data handling, simplified debugging, and a more maintainable application structure.'
         },
     ]
 
