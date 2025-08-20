@@ -49,7 +49,7 @@ function DashBoard() {
                         <img src={MyImages} className="myImage" alt="Noorulla" />
                     </div>
                 }
-                <div className="workedContainer order-2 mt-3" style={{ paddingLeft: windowWidth > 600 ? 150 : 0 }}>
+                <div className="workedContainer order-2" style={{ paddingLeft: windowWidth > 600 ? 150 : 0 }}>
                     <p className="poppinsSubText">Worked with</p>
                     <div className="workExp">
                         {

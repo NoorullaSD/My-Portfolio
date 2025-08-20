@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    padding-top: 20px;
 }
 
 .infoText {
@@ -25,6 +26,19 @@
         display: flex;
         flex-direction: column;
         height: 45vh;
+    }
+}
+
+/* For small screens */
+@media (max-width: 500px) {
+    .infoText {
+        max-width: 90%;
+        min-width: 50%;
+        padding-left: 150px;
+        padding-right: 150px;
+        display: flex;
+        flex-direction: column;
+        height: 35vh;
     }
 }
 
@@ -109,9 +123,26 @@
     padding-bottom: 30px;
 }
 
+@media (max-width: 600px) {
+
+    .workedContainer {
+        width: 90%;
+        padding-bottom: 30px;
+    }
+}
+
 
 .workExp {
     display: flex;
+}
+
+
+/* Mobile (<= 400px) */
+@media (max-width: 600px) {
+    .workExp {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .centizenConainer {
@@ -128,8 +159,29 @@
     border-width: 1.5px;
     border-color: rgba(51, 51, 51, 0.8);
     border-radius: 6px;
-
 }
+
+/* Mobile (<= 400px) */
+@media (max-width: 600px) {
+    .centizenConainer {
+        width: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-style: solid;
+        border-width: 1.5px;
+        border-color: rgba(51, 51, 51, 0.8);
+        border-radius: 6px;
+    }
+}
+
+
+
 
 .centizen {
     width: 100px;
