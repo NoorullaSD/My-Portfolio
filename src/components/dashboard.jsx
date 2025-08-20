@@ -13,8 +13,8 @@ import { useEffect, useState } from "react";
 function DashBoard() {
 
     const workExp = [
-        { company: Zoho },
-        { company: centizen },
+        { company: Zoho, exp: "Internship" },
+        { company: centizen, exp: "3+ years" },
     ]
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -36,7 +36,7 @@ function DashBoard() {
                 }
                 <div className="infoText" style={{ justifyContent: windowWidth > 600 ? "center" : "flex-start", }}>
                     <p className="poppinsHeaderText" style={{ color: "white" }}>Noorulla SD</p>
-                    <p className="poppinsSubText my-3" style={{ color: "white", textAlign: windowWidth > 600 ? 'initial' : 'justify' }}>Hi, I’m Noorulla, a passionate Software Developer with over 2 years of experience in building web and mobile applications. I love solving real-world problems with clean, efficient, and user-friendly code.</p>
+                    <p className="poppinsSubText my-3" style={{ color: "white", textAlign: windowWidth > 600 ? 'initial' : 'justify' }}>Hi, I’m Noorulla, a passionate Software Developer with over 3 years of experience in building web and mobile applications. I love solving real-world problems with clean, efficient, and user-friendly code.</p>
                     <button type="button" class="btn glow-btn mt-3"
                         onClick={() => {
                             document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" });
@@ -57,6 +57,7 @@ function DashBoard() {
                                 return (
                                     <div key={index} className="centizenConainer">
                                         <img src={item?.company} className="centizen" alt="Centizen" />
+                                        <p className="poppinsSubText" style={{ marginLeft: 10 }}>{item?.exp}</p>
                                     </div>
                                 )
                             })

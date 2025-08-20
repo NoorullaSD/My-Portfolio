@@ -115,8 +115,10 @@
 }
 
 .centizenConainer {
-    width: 160px;
-    height: 60px;
+    width: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,5 +133,5 @@
 
 .centizen {
     width: 100px;
-    height: 30px;
+    height: 40px;
 }

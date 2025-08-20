@@ -125,27 +125,43 @@ function NavBar() {
                         </div>
                         <div className="offcanvas-body">
                             {navBarMenu.map((item, index) => (
-                                <p
-                                    key={index}
-                                    className="menus poppinsNavBarText"
-                                    data-bs-dismiss="offcanvas"
-                                    style={{ marginBottom: 10 }}
-                                    onClick={() => {
-                                        // Close offcanvas first
-                                        const offcanvasEl = document.getElementById("mobileDrawer");
-                                        const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl); // Bootstrap API
-                                        if (bsOffcanvas) {
-                                            bsOffcanvas.hide();
-                                        }
+                                index == 4 ?
+                                    <a
+                                        href="mailto:er.noorulla@gmail.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ textDecoration: "none", color: "inherit" }}
+                                    >
+                                        <p key={index}
+                                            onClick={() =>
+                                                window.open("https://mail.google.com/mail/?view=cm&fs=1&to=er.noorulla@gmail.com", "_blank")
+                                            }
+                                            className="menus poppinsNavBarText">
+                                            {item?.name}
+                                        </p>
+                                    </a>
+                                    :
+                                    <p
+                                        key={index}
+                                        className="menus poppinsNavBarText"
+                                        data-bs-dismiss="offcanvas"
+                                        style={{ marginBottom: 10 }}
+                                        onClick={() => {
+                                            // Close offcanvas first
+                                            const offcanvasEl = document.getElementById("mobileDrawer");
+                                            const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl); // Bootstrap API
+                                            if (bsOffcanvas) {
+                                                bsOffcanvas.hide();
+                                            }
 
-                                        // Delay the scroll slightly so layout settles
-                                        setTimeout(() => {
-                                            document.getElementById(item?.id)?.scrollIntoView({ behavior: "smooth" });
-                                        }, 300);
-                                    }}
-                                >
-                                    {item?.name}
-                                </p>
+                                            // Delay the scroll slightly so layout settles
+                                            setTimeout(() => {
+                                                document.getElementById(item?.id)?.scrollIntoView({ behavior: "smooth" });
+                                            }, 300);
+                                        }}
+                                    >
+                                        {item?.name}
+                                    </p>
                             ))}
                             <div className="socialMediaIconsContainer mt-3">
                                 <div className="socialMediaIcons">
