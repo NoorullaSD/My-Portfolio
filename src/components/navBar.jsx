@@ -21,6 +21,23 @@ function NavBar() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    const openEmail = () => {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // ✅ If Android (try Gmail app via intent first)
+        if (/android/i.test(userAgent)) {
+            window.location.href =
+                "intent://compose?to=er.noorulla@gmail.com#Intent;scheme=mailto;package=com.google.android.gm;end";
+            setTimeout(() => {
+                // fallback if Gmail not available
+                window.location.href = "mailto:er.noorulla@gmail.com";
+            }, 800);
+        } else {
+            // ✅ For iOS & other devices → use mailto
+            window.location.href = "mailto:er.noorulla@gmail.com";
+        }
+    };
+
     return (
         <div className={windowWidth >= 800 ? "navBarContainer" : "navBarminContainer"}>
             {/* Desktop Menu */}
@@ -133,9 +150,7 @@ function NavBar() {
                                         style={{ textDecoration: "none", color: "inherit" }}
                                     >
                                         <p key={index}
-                                            onClick={() =>
-                                                window.open("https://mail.google.com/mail/?view=cm&fs=1&to=er.noorulla@gmail.com", "_blank")
-                                            }
+                                            onClick={openEmail}
                                             className="menus poppinsNavBarText">
                                             {item?.name}
                                         </p>

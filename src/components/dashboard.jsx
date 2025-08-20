@@ -7,6 +7,7 @@ import Experience from "./experience";
 import TeckStack from "./techStack";
 import Projects from "./projects";
 import { useEffect, useState } from "react";
+import ContactUs from "./contactUs";
 
 
 
@@ -68,6 +69,7 @@ function DashBoard() {
             <Experience />
             <TeckStack />
             <Projects />
+            <ContactUs />
         </div>
     )
 }

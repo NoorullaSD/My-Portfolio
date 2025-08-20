@@ -1,0 +1,50 @@
+.contactPoppinsHeaderTex {
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+}
+
+.contactPoppinsHeaderText {
+    font-weight: 700;
+    font-size: 26px;
+    color: white;
+}
+
+.contactPoppinsTinyText {
+    font-weight: 100;
+    font-size: 12px;
+    color: white;
+    padding-top: 10px;
+}
+
+.projectsPoppinsSubText {
+    font-weight: 100;
+    font-size: 16px;
+    color: white;
+}
+
+
+.contactUsContainer {
+    background: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.emailContainer {
+    display: flex;
+    align-items: center;
+    width: 15.5%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.phoneContainer {
+    display: flex;
+    align-items: center;
+    width: 11%;
+    justify-content: space-between;
+}
