@@ -42,9 +42,30 @@
     margin-top: 10px;
 }
 
+/* For small screens */
+@media (max-width: 500px) {
+    .emailContainer {
+        display: flex;
+        align-items: center;
+        width: 51%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+}
+
 .phoneContainer {
     display: flex;
     align-items: center;
     width: 11%;
     justify-content: space-between;
+}
+
+/* For small screens */
+@media (max-width: 500px) {
+    .phoneContainer {
+        display: flex;
+        align-items: center;
+        width: 35%;
+        justify-content: space-between;
+    }
 }
