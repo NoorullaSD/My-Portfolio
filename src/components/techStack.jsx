@@ -17,7 +17,7 @@ function TeckStack() {
     const color = "white"
     const stack = [
         {
-            name: 'React',
+            name: 'React Native',
             icon: <FaReact size={iconSize} color={color} />
         },
         {
