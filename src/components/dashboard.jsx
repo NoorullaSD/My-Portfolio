@@ -2,6 +2,7 @@ import NavBar from "./navBar";
 import "../styles/dashBoard.css";
 import MyImages from "../assets/NOOR.jpg"
 import centizen from "../assets/centizen.png"
+import figma from "../assets/figma.png"
 import Zoho from "../assets/zoho.png"
 import Experience from "./experience";
 import TeckStack from "./techStack";
@@ -16,6 +17,7 @@ function DashBoard() {
     const workExp = [
         { company: Zoho, exp: "Internship" },
         { company: centizen, exp: "3+ years" },
+        { company: figma, exp: "Figma tutoriyal", subExp: "Social media tutor" },
     ]
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -56,10 +58,22 @@ function DashBoard() {
                         {
                             workExp.map((item, index) => {
                                 return (
-                                    <div key={index} className="centizenConainer">
-                                        <img src={item?.company} className="centizen" alt="Centizen" />
-                                        <p className="poppinsSubText" style={{ marginLeft: 10 }}>{item?.exp}</p>
-                                    </div>
+                                    <a
+                                        key={index}
+                                        href="https://www.instagram.com/abu_uidesigner/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ textDecoration: "none", color: "inherit" }}
+                                    >
+                                        <div key={index} className="centizenConainer">
+                                            <img src={item?.company} className={item?.company == figma ? "figma" : "centizen"} alt="Centizen" />
+                                            <div>
+
+                                                <p className="poppinsSubText" style={{ marginLeft: 10, width: item?.company == figma ? 120 : 80 }}>{item?.exp}</p>
+                                                {item?.subExp && <p style={{ fontWeight: 50, fontSize: 12, color: "#FFFFFF", marginLeft: 10, opacity: 0.5, width: item?.company == figma ? 120 : null }}>{item?.subExp}</p>}
+                                            </div>
+                                        </div>
+                                    </a>
                                 )
                             })
                         }
