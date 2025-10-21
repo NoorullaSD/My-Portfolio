@@ -2,6 +2,8 @@ import "../styles/projects.css"
 import ToDoList from "../assets/toDoList.png"
 import Restaurtent from "../assets/p1.png"
 import Grocery from "../assets/p21.png"
+import Lakshini from "../assets/31.png"
+import DailyTask from "../assets/41.png"
 import { useEffect, useState } from "react";
 
 function Projects() {
@@ -15,7 +17,7 @@ function Projects() {
     return (
         <div id="project" className="projectsContainer">
             <h1 className="projectsPoppinsHeaderTex text-center mb-3">Projects</h1>
-            <div className="projetcWork" style={{ flexDirection: windowWidth > 600 ? 'row' : 'column' }}>
+            <div className="projetcWork" style={{ flexDirection: windowWidth > 600 ? 'row' : 'column', flexWrap: "wrap", justifyContent: "center" }}>
                 <div className="projectsBox">
                     <img src={ToDoList} className="projectsImage" alt="To Do List" />
                     <p className="projectsPoppinsHeaderText">To Do List</p>
@@ -40,12 +42,35 @@ function Projects() {
                         <button type="button" class="btn demo-btn mt-3">Live demo</button>
                     </a>
                 </div>
-
                 <div className="projectsBox">
                     <img src={Grocery} className="projectsImage" alt="To Do List" />
                     <p className="projectsPoppinsHeaderText">Green Grocery</p>
                     <p style={{ textAlign: "justify" }} className="projectsPoppinsTinyText">Designed a Grocery Shopping App UI in Figma with a focus on simplicity, usability, and modern design patterns. The app includes intuitive navigation, product listings and a smooth checkout flow to enhance the online shopping experience. I created a consistent design system with color schemes and reusable components, ensuring a clean and scalable UI. Interactive prototypes were developed to simulate real user flows, helping visualize the end-to-end shopping journey. This project showcases my ability to transform user needs into engaging.</p>
                     <a href="https://www.figma.com/proto/Djdzjm3Q6t6mlB5pQkJAd7/Grocery-App?node-id=60-145&p=f&t=IE4vMLBHon0kiCrC-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                        <button type="button" class="btn demo-btn mt-3">Live demo</button>
+                    </a>
+                </div>
+                <div className="projectsBox">
+                    <img src={Lakshini} className="projectsImage" alt="To Do List" />
+                    <p className="projectsPoppinsHeaderText">Label Lakshini</p>
+                    <p style={{ textAlign: "justify" }} className="projectsPoppinsTinyText">Designed a boutique fashion website UI in Figma for Label Lakshini, a women’s clothing brand. The goal was to create an elegant, modern, and user-friendly shopping experience that highlights premium collections. The design features clean layouts, smooth navigation, and visually rich product displays that enhance brand storytelling. I implemented a cohesive design system, refined typography, and a soft, feminine color palette to reflect the brand’s identity. This project demonstrates my ability to merge aesthetic appeal with functionality, crafting an immersive and stylish e-commerce experience.</p>
+                    <a href="https://www.figma.com/proto/hvTe4dwzmgwczJrxULejmd/Label-Lakshini?node-id=175-62&t=vN73caWBoKpsKjSW-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                        <button type="button" class="btn demo-btn mt-3">Live demo</button>
+                    </a>
+                </div>
+                <div className="projectsBox">
+                    <img src={DailyTask} className="projectsImage" alt="To Do List" />
+                    <p className="projectsPoppinsHeaderText">Daily Task</p>
+                    <p style={{ textAlign: "justify" }} className="projectsPoppinsTinyText">Designed a Daily Task App UI in Figma, focused on helping users manage their day-to-day activities efficiently with a clean and organized interface. The design emphasizes simplicity, intuitive navigation, and smooth user flow for adding, editing, and tracking tasks. I incorporated a consistent design system, modern typography, and a balanced color scheme to create a visually appealing yet functional layout. This project showcases my ability to design user-centered productivity tools that enhance focus, efficiency, and user engagement.</p>
+                    <a href="https://www.figma.com/proto/cnA0yLBxWDWrWyf0gWBoc8/Daily-Task-App?node-id=3-97&p=f&t=DPE7wJTeiyYBdmif-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ textDecoration: "none", color: "inherit" }}

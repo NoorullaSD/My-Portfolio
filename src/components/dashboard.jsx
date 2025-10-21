@@ -9,6 +9,7 @@ import TeckStack from "./techStack";
 import Projects from "./projects";
 import { useEffect, useState } from "react";
 import ContactUs from "./contactUs";
+import { MdOutlineOpenInNew } from "react-icons/md";
 
 
 
@@ -70,8 +71,15 @@ function DashBoard() {
                                             <div>
 
                                                 <p className="poppinsSubText" style={{ marginLeft: 10, width: item?.company == figma ? 120 : 80 }}>{item?.exp}</p>
-                                                {item?.subExp && <p style={{ fontWeight: 50, fontSize: 12, color: "#FFFFFF", marginLeft: 10, opacity: 0.5, width: item?.company == figma ? 120 : null }}>{item?.subExp}</p>}
+                                                {
+                                                    item?.subExp &&
+                                                    <p style={{ fontWeight: 50, fontSize: 12, color: "#FFFFFF", marginLeft: 10, opacity: 0.5, width: item?.company == figma ? 120 : null }}>{item?.subExp}</p>
+                                                }
                                             </div>
+                                            {
+                                                item?.subExp &&
+                                                <MdOutlineOpenInNew color="#FFFFFF" size={26} style={{ marginLeft: 16 }} />
+                                            }
                                         </div>
                                     </a>
                                 )
