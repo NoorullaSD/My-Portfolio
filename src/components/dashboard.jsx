@@ -61,7 +61,7 @@ function DashBoard() {
                                 return (
                                     <a
                                         key={index}
-                                        href="https://www.instagram.com/abu_uidesigner/"
+                                        href="https://www.instagram.com/tiny.tutor_/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         style={{ textDecoration: "none", color: "inherit" }}
