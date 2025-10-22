@@ -18,7 +18,7 @@ function DashBoard() {
     const workExp = [
         { company: Zoho, exp: "Internship" },
         { company: centizen, exp: "3+ years" },
-        { company: figma, exp: "Figma tutoriyal", subExp: "Social media tutor" },
+        { company: figma, exp: "Figma tutorial", subExp: "Social media tutor" },
     ]
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
